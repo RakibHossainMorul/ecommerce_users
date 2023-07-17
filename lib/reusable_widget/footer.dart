@@ -19,12 +19,18 @@ class FooterWidget extends StatelessWidget {
                       Icons.logo_dev,
                       size: 60,
                     )),
+                SizedBox(
+                  width: 20,
+                ),
                 IconButton(
                     onPressed: () {},
                     icon: Icon(
                       Icons.logo_dev,
                       size: 60,
                     )),
+                SizedBox(
+                  width: 20,
+                ),
                 IconButton(
                     onPressed: () {},
                     icon: Icon(
@@ -35,7 +41,7 @@ class FooterWidget extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 50,
           ),
           const Divider(
             color: Colors.black,
@@ -44,11 +50,32 @@ class FooterWidget extends StatelessWidget {
             indent: 60,
             endIndent: 60,
           ),
+          SizedBox(
+            height: 40,
+          ),
           Column(
             children: [
-              Text("Support@openfashion.com"),
-              Text("+87156566-56"),
-              Text("08:00 - 22:00 - Everyday")
+              Text(
+                "Support@openfashion.com",
+                style: TextStyle(fontSize: 20),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Text(
+                "+87156566-56",
+                style: TextStyle(fontSize: 20),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Text(
+                "08:00 - 22:00 - Everyday",
+                style: TextStyle(fontSize: 20),
+              ),
+              SizedBox(
+                height: 15,
+              ),
             ],
           ),
           Row(
@@ -58,6 +85,9 @@ class FooterWidget extends StatelessWidget {
               TextButton(onPressed: () {}, child: const Text("Contact")),
               TextButton(onPressed: () {}, child: const Text("Blog")),
             ],
+          ),
+          SizedBox(
+            height: 20,
           ),
           const Text("Copyright© OpenUI All Rights Reserved."),
         ],

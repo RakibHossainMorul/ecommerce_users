@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProductGridView extends StatelessWidget {
-  const ProductGridView({Key? key});
+  const ProductGridView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class ProductGridView extends StatelessWidget {
                   onPressed: () {
                     // Handle favorite icon button press
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.favorite_border,
                     color: Colors.red,
                     size: 25,
@@ -43,23 +43,20 @@ class ProductGridView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(
                 "21WN",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
               Text(
-                "reversible angora cardigan",
-                style: TextStyle(fontSize: 15),
-              ),
-              SizedBox(
-                height: 5,
+                "Reversible Angora Cardigan",
+                style: TextStyle(fontSize: 14),
               ),
               Text(
                 "120 BDT",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 14),
               ),
             ],
           ),
